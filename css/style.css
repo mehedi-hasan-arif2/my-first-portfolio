@@ -880,10 +880,38 @@ header {
 
 @media (max-width: 768px) {
     header { justify-content: center; padding: 1.5rem; }
-    .floating-nav { width: 90%; bottom: 15px; padding: 8px 12px; gap: 5px; }
-    .nav-item { width: 42px; height: 42px; font-size: 1.1rem; }
-    .nav-text { display: none; }
+   .floating-nav {
+        position: fixed;
+        bottom: 15px;
+        left: 50%;
+        right: auto; /* Purono right property reset korbe */
+        margin: 0; /* Extra margin thakle seta sorabe */
+        transform: translateX(-50%);
+        
+        width: 65%; /* Nav-er size ektu barano hoyeche visual balance-er jonno */
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.1); 
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 2000;
+    }
 
+    .nav-item {
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 50%;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
     .home-container { flex-direction: column-reverse; text-align: center; padding-top: 5rem; gap: 3rem; }
     .home-text h1 { font-size: 2.2rem; }
     #home .blob-box { width: 280px; height: 280px; flex: 0 0 280px; }
@@ -942,6 +970,7 @@ header {
     }
 }
 
+    
 
 
 
