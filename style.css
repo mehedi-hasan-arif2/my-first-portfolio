@@ -1377,7 +1377,8 @@ header {
     }
 
     .logo {
-        font-size: 1.3rem;
+       font-size: 1.1rem;
+        font-weight: 700;
     }
 
     /* Home Section */
@@ -1562,4 +1563,22 @@ header {
         padding: 6px 0;
         font-size: 14px;
     }
+    
+    .contact-right .liquid-btn {
+        width: fit-content;      
+        min-width: 130px;        
+        height: 34px;           
+        padding: 0 18px;         
+        font-size: 11px;    
+        margin: 12px auto 0;
+        border-radius: 50px;    
+    }
+
+    .liquid-btn .btn-text {
+        gap: 5px;               
+    }
+
+    .liquid-btn i {
+        font-size: 12px;         
+    }   
 }
