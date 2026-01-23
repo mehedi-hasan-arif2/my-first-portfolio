@@ -90,9 +90,9 @@ function openModal(id) {
             <h2 style="color:#38bdf8; margin-bottom:15px;">${data.title}</h2>
             <p style="margin-bottom:20px; line-height:1.6; color:#cbd5e1;">${data.desc}</p>
             <p><strong>Tech Used:</strong> ${data.tech}</p>
-            <div style="margin-top:25px; display:flex; gap:15px;">
-                <a href="${data.live}" target="_blank" class="btn-fill" style="text-decoration:none; padding:10px 20px; background:#38bdf8; color:#fff; border-radius:5px;">Live Demo</a>
-                <a href="${data.github}" target="_blank" class="btn-outline" style="text-decoration:none; padding:10px 20px; border:1px solid #38bdf8; color:#38bdf8; border-radius:5px;">GitHub Code</a>
+            <div class="modal-btn-group">
+                <a href="${data.live}" target="_blank" class="modal-btn btn-fill">Live Demo</a>
+                <a href="${data.github}" target="_blank" class="modal-btn btn-outline">GitHub Code</a>
             </div>`;
         modal.style.display = "flex";
         document.body.style.overflow = "hidden";
