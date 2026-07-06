@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "SkillSphere",
             desc: "A modern skill-sharing and learning platform featuring smooth animations, authentication, and an engaging UI.",
             tech: "Next.js, React, Tailwind CSS, DaisyUI, Framer Motion, Better-auth, Lucide React, Swiper",
-            live: "https://skillsphere-mehedi-hasan-arif.netlify.app/",
+            live: "https://skillsphere23.netlify.app/",
             github: "https://github.com/mehedi-hasan-arif2/SkillSphere"
         },
         "space-jet": {
